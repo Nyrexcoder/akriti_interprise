@@ -50,7 +50,7 @@
         input[type="text"]
         {
             width: 80%;
-            padding: 2.5% 1%;
+            padding: 2% 1%;
             background:transparent;
             font-size:18px;
             outline:none;
