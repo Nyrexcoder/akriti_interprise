@@ -1,10 +1,9 @@
 <?php 
-    //  session_start();
-    //  if(!isset($_SESSION['username']))
-    //  {
-    //    header('location:./index.php'); 
-          // echo "<script>window.location='index.php';</script>";
-    //  }
+     session_start();
+     if(!isset($_SESSION['user']))
+     {
+     header('location:./adminlogin.php');
+     }
         include('includes/header1.php');
         // include('includes/footer1.php');
 ?>
