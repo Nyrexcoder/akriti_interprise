@@ -14,30 +14,36 @@
         .parentbox{
             width:100%;
             height:100vh;
-            /* border:1px solid red; */
-          position: relative;
         }
-        .box{
+         .box{
             width:100%;
             height:100%;
             background-color:#240002;
-            padding: 15% 0px;
+            display:flex;
+            justify-content:center;
+            align-items:center;
         }
         form{
             width: 50%;
-            height:100%;
             background: rgb(131,58,180);
             background: linear-gradient(115deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 54%, rgba(252,176,69,1) 100%);
             margin: auto;
-            padding: 3% 10%;
+            padding: 2% 5%;
             border-radius:5px;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            flex-direction:column;
+        }
+         form h2{
+            text-align:center;
+            color:#fff;
+            margin-bottom:4%;
         }
         .inputbox{
             width: 100%;
-            /* border:1px solid yellow; */
-            /* padding: 0px 2%; */
             background-color:#4d0000;
-            margin: 4% 0px;
+            margin: 3% 0px;
             border-radius:5px;
 
         }
@@ -69,12 +75,35 @@
             background-color: #1a0000;
             color:#fff;
         }
+         @media screen and (max-width:1024px) {
+            form{
+                width: 65%;
+            }
+        }
+        @media screen and (max-width:768px) {
+            form{
+                width: 75%;
+            }
+        }
+       
+        @media screen and (max-width:525px) {
+            form{
+                width: 80%; 
+            }
+        }
+        @media screen and (max-width:425px) {
+            
+            form{
+                width: 95%; 
+            }
+        }
     </style>   
 </head>
 <body>
     <div class="parentbox">
         <div class="box">
             <form action="loginform.php" method="post">
+                <h2>Login Form </h2>
                 <div class="inputbox">
                     <label for="username"><i class='bx bxs-user'></i></label>
                     <input type="text" name="username" id="username" placeholder="Username">
