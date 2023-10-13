@@ -1,6 +1,6 @@
 <?php
-
-
+      session_start();
+   
     include('./db/database.php');
 
     $user=$_POST['username'];
@@ -20,7 +20,7 @@
     if($uu==$user && $pp=$pass)
     {
         // print "<h1>Successfully login</h1>";
-        // $_SESSION['user']=$user;
+         $_SESSION['user']=$user;
          echo "<script>window.location='admin.php';</script>";
 
     }
